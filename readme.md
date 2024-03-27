@@ -247,7 +247,7 @@ http://localhost:8080 確認する
 
 # コンテナの確認
 ```
-hazuki@DESKTOP-RDM131Q:~/Test/handson2/next-front$ docker ps
+@DESKTOP-RDM131Q:~/Test/handson2/next-front$ docker ps
 CONTAINER ID   IMAGE                COMMAND   CREATED          STATUS          PORTS                    NAMES
 e4dc3c8976a1   handson2-go-server   "air"     13 minutes ago   Up 13 minutes   0.0.0.0:8080->8080/tcp   handson2-go-server-1
 ```
@@ -260,6 +260,7 @@ docker compose down
 
 ホットリロードなので、main.goの書き換えを行ったので、再度ビルドしてupする
 ```
+docker compose build next-front
 docker compose build go-server
 docker compose up
 ```
@@ -268,3 +269,4 @@ docker compose up
 * next-front/app/composents/DataFetcher.client.tsx作成
 * next-front/app/page.tsx編集
 * next.config.mjs  ようわからん
+* [notion](https://www.notion.so/Git-7f17a92441f949e8bd1cb3eac6381ebf?pvs=4)
