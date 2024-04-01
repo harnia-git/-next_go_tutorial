@@ -20,6 +20,6 @@ func dataHandler(w http.ResponseWriter, r *http.Request) {
     // シンプルなCORS設定: 本番環境ではもっと厳格に設定するべきです
     w.Header().Set("Access-Control-Allow-Origin", "*")
     w.Header().Set("Content-Type", "application/json")
-    message := Message{Text: "Hello from Go Backend!"}
+    message := Message{Text: "Hello from Go Backend yeah!"}
     json.NewEncoder(w).Encode(message)
 }
